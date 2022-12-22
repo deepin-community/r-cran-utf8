@@ -1,0 +1,26 @@
+Source: r-cran-utf8
+Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-lists.debian.net>
+Uploaders: Andreas Tille <tille@debian.org>
+Section: gnu-r
+Testsuite: autopkgtest-pkg-r
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-r,
+               r-base-dev
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/r-pkg-team/r-cran-utf8
+Vcs-Git: https://salsa.debian.org/r-pkg-team/r-cran-utf8.git
+Homepage: https://cran.r-project.org/package=utf8
+Rules-Requires-Root: no
+
+Package: r-cran-utf8
+Architecture: any
+Depends: ${R:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Recommends: ${R:Recommends}
+Suggests: ${R:Suggests}
+Description: GNU R unicode text processing
+ This GNU R package helps processing and printing 'UTF-8' encoded
+ international text (Unicode). Input,  validate, normalize, encode,
+ format, and display.

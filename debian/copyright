@@ -1,0 +1,66 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: utf8
+Upstream-Contact: Patrick O. Perry <pperry@stern.nyu.edu>
+Source: https://cran.r-project.org/package=utf8
+
+Files: *
+Copyright: 2013-2018 Patrick O. Perry, Unicode, Inc.
+License: Apache-2.0
+
+Files: src/utf8lite/src/private/*
+Copyright: 2013-2018 Patrick O. Perry, Unicode, Inc.
+License: UNICODE
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of the Unicode data files and any associated documentation
+ (the "Data Files") or Unicode software and any associated documentation
+ (the "Software") to deal in the Data Files or Software
+ without restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, and/or sell copies of
+ the Data Files or Software, and to permit persons to whom the Data Files
+ or Software are furnished to do so, provided that either
+ (a) this copyright and permission notice appear with all copies
+ of the Data Files or Software, or
+ (b) this copyright and permission notice appear in associated
+ Documentation.
+ .
+ THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF
+ ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+ NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+ DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+ DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder
+ shall not be used in advertising or otherwise to promote the sale,
+ use or other dealings in these Data Files or Software without prior
+ written authorization of the copyright holder.
+Comment: Comment from author via e-mail:
+ (see https://bugs.debian.org/887091#15)
+ .
+ From: Patrick Perry <pperry@stern.nyu.edu>
+ Date: Mon, 15 Jan 2018 07:07:42 -0500
+ .
+ That license is the Unicode license from
+ http://unicode.org/copyright.html . I don't include the character data
+ verbatim, but I have a set of headers derived from them, for example
+ https://github.com/patperry/utf8lite/blob/master/src/private/charwidth.h
+ . These are generated from the python scripts here:
+ https://github.com/patperry/utf8lite/tree/master/util .
+ .
+ I have listed "Unicode, Inc. (Unicode Character Database)" in the Author
+ field per the CRAN policy, and I believe that the current package
+ description is compatible with the Unicode license. If you have
+ suggestions for how to better document the license situation in the
+ package, please let me know.
+
+Files: debian/*
+Copyright: 2018 Andreas Tille <tille@debian.org>
+License: Apache-2.0
+
+License: Apache-2.0
+ On Debian systems you can find the full text of the Apache license
+ version 2.0 at /usr/share/common-licenses/Apache-2.0.
